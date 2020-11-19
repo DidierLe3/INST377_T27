@@ -17,6 +17,7 @@ async function getData(state) {
 
   return leg[0];
 }
+
 const contr_arr = [];
 async function getContr(CID) {
   // console.log(CID);
