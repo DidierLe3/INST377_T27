@@ -254,7 +254,7 @@
         DC: 'M 801.75695,253.84384 L 800.67992,252.20717 L 799.66604,251.36463 L 800.7653,249.74841 L 802.99814,251.25941 z'
 
       };
-      
+
       // Create the actual objects
       var stateAttr = {};
       for (var state in paths) {
@@ -275,7 +275,7 @@
         });
         this.stateHitAreas[state].node.dataState = state;
       }
-      
+
       // Bind events
       this._onClickProxy = $.proxy(this, '_onClick');
       this._onMouseOverProxy = $.proxy(this, '_onMouseOver'),
