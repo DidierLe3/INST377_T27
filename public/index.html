@@ -1,32 +1,37 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+    
     <script src="map/raphael.js"></script>
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous">
     </script>
-    <script src="map/jquery.usmap.js"></script>
-    
 
+    <script src="map/jquery.usmap.js"></script>
 </head>
+
+
 <body>
     <div class="wrapper">
         <div class="header">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="About.html">About</a></li>
                   <li><a href="Documentation.html">Document</a></li>
-          
                 </ul>
               </nav>
         </div>
-        <div class="container">
 
+        <div class="container">
             <div id="map" style="width: 930px; height: 630px; border: solid 3px black;"></div>
             <div class="results">
                 <div class="dropdown">
@@ -34,16 +39,16 @@
                         <option value="">Choose a legislator</option>
                     </select>
                 </div>
+
                 <div class="top_contr">
                                 
-                            </div>
+                </div>
 
-            </div>
-            
+            </div>          
             
             <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
-            
         </div>
+
     </div>
     
     <script src="map/map.js"></script>
