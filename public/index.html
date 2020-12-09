@@ -21,17 +21,20 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
-            <nav class = "pages">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Documentation.html">Document</a></li>
-                </ul>
-              </nav>
-        </div>
-
         <div class="container">
+            <div class="header">
+                
+                <nav class = "pages">
+                    <ul class="pagesList">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="About.html">About</a></li>
+                      <li><a href="Documentation.html">Document</a></li>
+                    </ul>
+                  </nav>
+
+            </div> <!--end <div class="header">-->
+
+
             <div id="map" style="width: 930px; height: 630px; border: solid 3px black;"></div>
             <div class="results">
                 <div class="dropdown">
@@ -45,20 +48,21 @@
                 </div>
             </div> <!--end <div class="results"> -->          
             
-            <div class="search_bar">
-                                
-            </div>
 
             <div class="slide_bar">
                 <div class="slider">
                                  
                 </div>                 
-            </div>
+            </div> <!--end <div class="slide_bar">-->
 
             <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
         </div> <!--end <div class="container">-->
 
-    </div>
+
+
+        
+        
+    </div> <!--end wrapper-->
     
     <script src="map/map.js"></script>
     <script src="script.js"></script>
