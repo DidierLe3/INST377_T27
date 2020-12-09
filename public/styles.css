@@ -1,185 +1,43 @@
-/*CSS*/
-body {
-  background: #3895a8;
-  background-image: radial-gradient(  
-  rgb(4, 243, 171), rgb(180, 255, 214)
-  );
-  /*font-family: 'Baloo 2', cursive;*/
-  /*font-family: 'Play', sans-serif;*/
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 16pt;
-  color: #2a2a2a; 
-}
-
-.pages a {
-  text-align: center;
-  padding: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  display: block;
-  color: white;
-}
-.pages a:hover {
-  background: #87d76f;
-}
-.pages li:last-of-type a {
-  border-bottom: none;
-}
-
-@media all and (min-width: 600px) {
-  .pages {
-    flex-flow: row wrap;
-  }
-  .pages a {
-    padding: 1em;
-  }
-  .aside {
-    flex: 1 auto;
-  }
-}
-
-/* large sized screens */
-@media all and (min-width: 800px) {
-  .pages {
-    justify-content: flex-end;
-  }
-  .main {
-    flex: 3 0px;
-  }
-  .aside1 {
-    order: 1;
-  }
-  .main {
-    order: 2;
-  }
-  .aside2 {
-    order: 3;
-  }
-  .footer {
-    order: 4;
-  }
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.container {
-  min-height: 100%;
-  display: flex;
-}
-
-.header {
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  margin-bottom: 5px;
-  padding: 4px 8px;
-  border-radius: 4px;
 }
 
-/* Enter YOUR lab styles after this line */
-.header * {
-  margin: 5px;
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.header h1 {
+
+.pagesList{
+  display: flex; /*it makes it flexible from small to big screen*/
+  flex-direction: row; /**/
+  justify-content: space-between; /*will have no effect because justify-content property applies only to a flex container */
+  padding-top: 20px;
+  
+}
+
+.pagesList li{
+  display: inline;
+  width: 200px; /*adds space between the element in the title bar (Home   About   Documentation) */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a{
   text-align: center;
+  color: white;
 }
 
-.header h2 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+/* justify-content property applies only to a flex container.*/
 
-.search-form {
+body {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: 0 auto;
-  width: 50%;
-  /*max-width: 800px;*/
+  background: #2e6b33;
+  font-size: 16pt;
+  align-content: center;
+  justify-content: center
 }
-
-.search-form * {
-  width: 100%;
-  align-items: flex-end;
-  padding: 0;
-}
-
-.search {
-  font: inherit;
-}
-
-.search-form > .suggestions li {
-  background-color:orange;
-  background-image: linear-gradient(
-    rgb(242, 252, 255), rgb(109, 209, 235)
-  );
-  border: 2px double rgb(102, 102, 139);
-  border-radius: 5px;
-  list-style: none;
-  margin: 10px auto;
-  padding: 12px;
-  width: auto;
-}
-
-li .name {
-  font-size: 20pt;
-  font-weight: bold;
-  padding-bottom: 3px;
-}
-
-@media (max-width: 400px) {
-  .search-form {
-    width: 90%;
-  }
-}
-
-
-/*.flex-outer li,
-.flex-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.flex-outer > li > label,
-.flex-outer li p {
-  flex: 1 0 125px;
-  max-width: 225px;
-  padding: 8px;
-}
- 
-.flex-outer > li > label + *,
-.flex-inner {
-  flex: 1 0 225px;
-}
-
-.flex-outer button {
-  margin-left: 0px;
-  padding: 6px 12px;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  border-radius: 3px;
-}
-
-.flex-inner li {
-  width: 80px;
-}
-
-.flex-inner {
-  padding: 0 8px;
-  justify-content: space-between;
-}
-
-.flex-outer {
-  max-width:800px;
-  padding: 0 16px;
-}*/
