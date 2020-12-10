@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css"/>
     
     <script src="map/raphael.js"></script>
@@ -21,21 +23,90 @@
 
 <body>
     <div class="wrapper">
-        <div class="container">
-            <div class="header">
+        <div class="container">     
+
+            <div class="left">
+                <div class="website-logo-box">
+                    <img src="legislator_logo.JPG" alt="legislator website logo">
+                </div><!--end <div class="logo-box">-->
+
+
+                <div class="left-navigation">
+                    <nav class = "left-nav">
+                        <ul class="leftList">
+                        <!--placeholder for navigation menu 
+                        It will be on the left side in the map-->
+                        </ul>
+                    </nav>
+                </div><!--end <div class=""left-navigation"">-->
+            </div> <!--end left-->           
+
+
+            <!--The mid box contains:
+                    - The pages bar (Home  About   Documentation)
+                        - It is located on the center top of the box
+                    
+                    - The map box
+                    - The slider bar
+                    - The search bar
+                    - The drop down menu-->
+                    
+            <div class="mid"> 
+                <div class="headerANDmap">
+                           
+                    <div class="header">
+    
+                        <nav class = "pages">
+                            <ul class="pagesList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Documentation.html">Document</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class = "searchFilter">
+
+                        </div><!--end <div class = "searchFilter">-->
+
+                        <div class="map">
+                        
+                        </div><!--end map-->      
+                    </div> <!--end <div class="header">-->
+                </div><!--end <div class="headerANDmap">-->
+            </div> <!--end mid-->
+
+
+            <!--The right box is located on the far right
+                It contains a filter box -->
+            <div class="right">
+                <div class = "filter">
+                    
+                </div><!--end <div class = "filter">-->
+            </div> <!--end right-->
+
+
+            
+
+            
+            
+
+
+            <div class = "searchBar">
+                <i class="fa fa-search"></i>
+            </div><!--end <div class = "searchBar">-->  
+
                 
-                <nav class = "pages">
-                    <ul class="pagesList">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="About.html">About</a></li>
-                      <li><a href="Documentation.html">Document</a></li>
-                    </ul>
-                  </nav>
-
-            </div> <!--end <div class="header">-->
+            <div class="slide_bar">
+                <div class="slider">
+                                    
+                </div>                 
+            </div> <!--end <div class="slide_bar">-->
 
 
-            <div id="map" style="width: 930px; height: 630px; border: solid 3px black;"></div>
+            <div class = "menu">
+
+            </div><!--end <div class = "menu">-->
+                
             <div class="results">
                 <div class="dropdown">
                     <select name="legislators" id="l-select">
@@ -49,11 +120,7 @@
             </div> <!--end <div class="results"> -->          
             
 
-            <div class="slide_bar">
-                <div class="slider">
-                                 
-                </div>                 
-            </div> <!--end <div class="slide_bar">-->
+            
 
             <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
         </div> <!--end <div class="container">-->
