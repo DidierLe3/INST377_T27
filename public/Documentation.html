@@ -1,42 +1,60 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>    
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <div class="wrapper">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation</title>    
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> 
 
+    </head>
+    <body>
         <div class="wrapper">
-            <div class="container">     
-    
-                <div class="left">
-                    <div class="website-logo-box">
-                        <img src="legislator_logo.JPG" alt="legislator website logo">
-                    </div><!--end <div class="logo-box">-->
-                </div> <!--end left-->           
-    
-    
-                <!--The mid box contains intructions about the content 
-                    in the website-->
-                        
-                <div class="mid"> 
-                    <p>
+            <nav class="navbar is-dark has-shadow is-black">
+                <div class="navbar-brand">
+                    <a class="navbar-burger" id="burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </div>
+                <div class="navbar-menu" id="nav-links">
+                <!-- <div class="navbar-end"> -->
+                    <a class="navbar-item center" href="index.html">Home</a>
+                    <a class="navbar-item" href="About.html">About</a>
+                    <a class="navbar-item" href="Documentation.html">Document</a>
+                <!-- </div> -->
+                </div>
+            </nav>
+            
+                <section class="section">
+                    <div class="container" id="doc_info">
+                        <p>
+                                The Center for Responsive Politics /also known as OpenSecrets\ allows their data to be accessed via API /Application Programming Interface\ calls.
+                            Users that register for this feature are allowed access and are given API keys that are used for authorization purposes when calling the data through Javascript.
+                            The API documentation listed on the opensecrets.org website provides a variety of functions that return different data depending on what a user may need.
+                            In our case, the following methods were used:
+                        </p>
+                        <!-- <ul class="doc_list">
+                            <lh>the getLegislators method is essentially the most general function, and returns a list of current Congress legislators and representatives associated for each state.</lh>
+                            <li>getLegislators</li>
+                            <li>candContrib</li>
+                            <li>candIndustry</li>
+                            <li>candSummary</li>
+                        </ul> -->
+                        <p>
+                            As for the rest of the functions, their method names are offer a fairly concise, if not vague, description of what they return.
+                            The Contrib function returns the top contributors to a candidate for the indicated period /sourced from https://www.opensecrets.org/open-data/api-documentation\.
+                            The Industry funbction return the top industries to a candidate for the indicated period /sourced from https://www.opensecrets.org/open-data/api-documentation\.
+                            he Summary function returns summary contribution on a candidate for the indicated period /Guess where this was sourced from?\.
+                        </p>
+                        <p>
+                            After making the API calls and getting JSON objects in return, we sorted through them and pulled out the important bits that were to be displayed along with our map.
+                        </p>
+                    </div>
+                </section>
+                
 
-                    </p>                            
-                        
-
-                    <div class="slide_bar">
-                        <div class="slider">
-                                            
-                        </div>                 
-                    </div> <!--end <div class="slide_bar">-->
-                </div> <!--end mid-->          
-    
-                <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
-            </div> <!--end <div class="container">-->
-</div> <!--end wrapper-->
-    <script src="script.js"></script>
-</body>
+        </div>
+        <script src="bulma_script.js"></script>
+    </body>
 </html>
