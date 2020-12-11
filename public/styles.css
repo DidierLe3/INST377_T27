@@ -1,4 +1,4 @@
-.container{
+/*.container{
   display: flex;
 }
 
@@ -9,13 +9,203 @@
 
 .left{
   flex:1; 
+  order: 1;
 }
  
 .mid{ 
   flex:1; 
+  order: 2;
 }
  
 .right{
   flex:1; 
-}
+  order: 3;
+}*/
  
+
+.navbar.is-dark {
+  background-color:#261C24 !important;
+  color: white !important;
+}
+
+.navbar-menu {
+  background-color: #2f232d !important;
+}
+
+.wrapper {
+  /* background-color:#72B7BC !important; */
+  background-color:#091326 !important;
+  color: white !important;
+}
+
+.title, .subtitle, .navbar-item {
+  color: white !important;
+}
+
+/* .org_contr, .ind_Contr, .cand_summary {
+  /* margin-bottom: 15rem !important; */
+  
+/* }  */
+
+.results {
+  background-color: #261C24 !important;
+  /* margin-bottom: 15rem !important; */
+  
+}
+
+.ic_results, .org_results, .ci_results {
+  background-color: #2f232d !important;
+  min-height: 240px !important;
+}
+
+.ci_results {
+  min-height: 100px !important;
+}
+
+.l_select {
+  align-content: space-around !important;
+}
+
+.filter_box {
+  background-color: black;
+  /* flex-direction: column-reverse !important;
+  margin-right: 53rem !important;
+  margin-left: 53rem !important; */
+}
+
+/* #doc_info {
+  /* margin: 90px !important; */
+  /* margin-left: 250px !important;
+  margin-right: 250px !important;
+  justify-items: center !important;
+  align-items: center !important; */
+} */
+
+/* header {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+/* }
+
+body {
+  background: #3895a8; */
+  /* background-image: radial-gradient(  
+  rgb(29, 167, 231), rgb(53, 80, 235)
+  );
+  /*font-family: 'Baloo 2', cursive;*/
+  /*font-family: 'Play', sans-serif;*/
+  /* font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 15pt; */
+  /* color: #2a2a2a; */ 
+} 
+/* .hero {
+  justify-content: space-between;
+  color: black;;
+  background-color: rgb(133, 250, 240);
+  text-align: center;
+} */
+
+/* .columns, .column {
+  display: inline;
+  text-align: center;
+  flex: 1;
+  font-size: 20pt;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 20;
+  
+} */
+
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .header {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+} */
+
+/* Enter YOUR lab styles after this line */
+/* .header * {
+  margin: 10px;
+} */
+/* .header h1 {
+  text-align: center;
+} */
+
+/* .header h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+} */
+
+/* .search-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  /*max-width: 800px;*/
+} /*
+ 
+.search-form * {
+  width: 100%;
+  align-items: flex-end;
+  padding: 0;
+} */
+
+/* .search {
+  font: inherit;
+} */
+
+/* .search-form > .suggestions li {
+  background-color:orange;
+  background-image: linear-gradient(
+    rgb(242, 252, 255), rgb(109, 209, 235)
+  );
+  border: 2px double rgb(102, 102, 139);
+  border-radius: 5px;
+  list-style: none;
+  margin: 10px auto;
+  padding: 12px;
+  width: auto;
+} */
+
+/* li .name {
+  font-size: 20pt;
+  font-weight: bold;
+  padding-bottom: 3px;
+} */
+
+/* .container, .map {
+  .is-horizontal-center{
+  justify-content: center;
+  }
+} */
+
+/* @media (max-width: 1000px) {
+  #doc_info {
+    margin: auto !important;
+  }
+} */
