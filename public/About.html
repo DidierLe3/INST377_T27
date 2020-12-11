@@ -1,41 +1,62 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>    
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container"> 
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>   
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> 
+        <script src="map/raphael.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+        </script>
+        <script src="map/jquery.usmap.js"></script>
+    </head>
+    <body>
 
+      <div class="wrapper">
+        
+        <nav class="navbar is-dark has-shadow is-white">
+          <div class="navbar-brand">
+            <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
 
-            <!--The mid box contains a paragraph-->
-                    
-            <div class="mid"> 
-                <p>
-                    
-                </p>
-            </div> <!--end mid-->
-
-
-            <!--The right box is located on the far right
-                It contains a contact -->
-            <div class="right">
-                <div class = "contact-us">
-                    
-                </div><!--end <div class = "filter">-->
-
-                <img src="instagram.JPG" alt="instagram">
-                <img src="facebook.JPG" alt="facebook">
-                <img src="twitter.JPG" alt="twitter">
-            </div> <!--end right-->
-
-            <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
-        </div> <!--end <div class="container">-->
- 
-    </div> <!--end wrapper-->
-
-    <script src="script.js"></script>
-</body>
-</html>
+            </a>
+          </div>
+          <div class="navbar-menu" id="nav-links">
+            <!-- <div class="navbar-end"> -->
+              <a class="navbar-item center" href="index.html">Home</a>
+              <a class="navbar-item" href="About.html">About</a>
+              <a class="navbar-item" href="Documentation.html">Document</a>
+            <!-- </div> -->
+          </div>
+        </nav>
+        
+        
+          <section class="section">
+            <div class="container">
+              <h1>Our project idea focuses transparency in politics, specifically regarding legislative funding.</h1>
+              <p>Many people are unaware of the various political intricacies present with the United States Government.
+              Using an API offered by The Center for Responsive Politics, we gathered some important financial data about the representatives and senators of each state.
+              While our adaptation of the API does not cover an extensive field of political and financial data, it does cover the following things which the average person may find useful:
+              </p>
+              <ul>
+                <li>Top general contributors for a given representative/senator</li>
+                <li>Top industries that support a given representative/senator</li>
+                <li>Summary data for a representative/senator that includes total funding data among other statistics</li>
+              </ul>
+              <p>While our project is unlikely to provide any groundbreaking insight into a politician's financial activity,
+              we do hope that people can use the information we've condensed as a point of reference when thinking about who they want to support.
+              A condensed map of the United States which displays data upon click is presented, and will display the data mentioned earlier.
+              </p>
+            </div>  
+          </section>
+                
+        
+      </div>
+      <script src="bulma_script.js"></script>
+    </body>
+    </html>
