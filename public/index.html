@@ -1,138 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <script src="map/raphael.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+        </script>
+        <script src="map/jquery.usmap.js"></script>
+    </head>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css"/>
-    
-    <script src="map/raphael.js"></script>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous">
-    </script>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar is-dark has-shadow is-white">
+                <div class="navbar-brand">
+                    <a class="navbar-burger" id="burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>        
+                    </a>
+                  </div>
+                <div class="navbar-menu is-dark"  id="nav-links">
+                <!-- <div class="navbar-end"> -->
+                    <a class="navbar-item is-white" href="index.html">Home</a>
+                    <a class="navbar-item" href="About.html">About</a>
+                    <a class="navbar-item" href="Documentation.html">Document</a>
+                <!-- </div> -->
+                </div>
+            </nav>
+            <section class="section">
+                <div class="container">
+                    <div class="map" style="width: 930px; height: 630px; border: solid 3px white;"></div>
+                </div>
+            </section>
 
-    <script src="map/jquery.usmap.js"></script>
-</head>
+            <section class="section">
+                <div class="results">                    
+                    <div class="container py-4">
+                    <p class="subtitle" id="chosen_State">The State you hae chosen is: </p>
+                        <select name="legislators" class="l_select">
+                            <option value="">Choose A Legislator</option>
+                        </select>
+                    </div>
 
-
-<body>
-    <div class="wrapper">
-        <div class="container">     
-
-            <div class="left">
-                <div class="website-logo-box">
-                    <img src="legislator_logo.JPG" alt="legislator website logo">
-                </div><!--end <div class="logo-box">-->
-
-
-                <div class="left-navigation">
-                    <nav class = "left-nav">
-                        <ul class="leftList">
-                        <!--placeholder for navigation menu 
-                        It will be on the left side in the map-->
-                        </ul>
-                    </nav>
-                </div><!--end <div class=""left-navigation"">-->
-            </div> <!--end left-->           
-
-
-            <!--The mid box contains:
-                    - The pages bar (Home  About   Documentation)
-                        - It is located on the center top of the box
+                    <div class="container mb-6 mt-3">
                     
-                    - The map box
-                    - The slider bar
-                    - The search bar
-                    - The drop down menu-->
-                    
-            <div class="mid"> 
-                <div class="headerANDmap">
-                           
-                    <div class="header">
-    
-                        <nav class = "pages">
-                            <ul class="pagesList">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="About.html">About</a></li>
-                            <li><a href="Documentation.html">Document</a></li>
-                            </ul>
-                        </nav>
-                        
-                        <div class = "searchFilter">
+                        <div class="org_Contr">
+                            <p class="title">Top Contributors By Organizations</p>
+                            <div class="org_results">
+                                <ol class="org_results_list" type="1">
+                                </ol>
 
-                        </div><!--end <div class = "searchFilter">-->
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="map">
-                        
-                        </div><!--end map-->      
-                    </div> <!--end <div class="header">-->
-                </div><!--end <div class="headerANDmap">-->
-            </div> <!--end mid-->
+                    <div class="container my-6">
+                        <div class="ind_Contr">
+                            <p class="title">Top Contributions by Industry</p>
+                            <div class="ic_results">
+                                <ol class="result_list" type="1"></ol>
 
+                            </div>
+                        </div>
+                    </div>
 
-            <!--The right box is located on the far right
-                It contains a filter box -->
-            <div class="right">
-                <div class = "filter">
-                    
-                </div><!--end <div class = "filter">-->
-            </div> <!--end right-->
-
-
-            
-
-            
-            
-
-
-            <div class = "searchBar">
-                <i class="fa fa-search"></i>
-            </div><!--end <div class = "searchBar">-->  
-
-                
-            <div class="slide_bar">
-                <div class="slider">
+                    <div class="container my-6">
+                        <div class="cand_summary">
+                            <p class="title">Contact Info</p>
+                            <div class="ci_results">
+                                <ol class="ci_list">
                                     
-                </div>                 
-            </div> <!--end <div class="slide_bar">-->
-
-
-            <div class = "menu">
-
-            </div><!--end <div class = "menu">-->
-                
-            <div class="results">
-                <div class="dropdown">
-                    <select name="legislators" id="l-select">
-                        <option value="">Choose a legislator</option>
-                    </select>
-                </div>
-
-                <div class="top_contr">
+                                </ol>
+                            </div>
+                        </div>
+                    </div>  
+                    
                       
-                </div>
-            </div> <!--end <div class="results"> -->          
-            
 
-            
-
-            <!-- <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button> -->
-        </div> <!--end <div class="container">-->
-
-
-
-        
-        
-    </div> <!--end wrapper-->
+                    <div class="filter_Box">
+                        <form class="filters" style="border: white;">
+                            <label>Filter Menu</label> <br>
+                            <input type="checkbox" name="Representatives" id="checkbox_1">
+                            <label for="checkbox_1">Representatives</label><br>
+                            <input type="checkbox" name="Senators" id="checkbox_2">
+                            <label for="checkbox_2">Senators</label><br>
+                            <input type="checkbox" name="D" id="checkbox_3">
+                            <label for="checkbox_3">Democrats</label><br>
+                            <input type="checkbox" name="R" id="checkbox_4">
+                            <label for="checkbox_4">Republicans</label><br>
+                            <button type="submit">Filter</button>
+                        </form>
+                    </div>
+                </div>    
+            </section>
+        </div>
     
-    <script src="map/map.js"></script>
-    <script src="script.js"></script>
+        <!--<script src="map/map.js"></script>-->
+        <script src="map/jquery.usmap.js"></script>
+        <script src="bulma_script.js"></script>
+        <script src="script.js"></script>
+        
+    </body>           
     
-</body>
 </html>
